@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
   --primary: #bc4123;
@@ -28,20 +28,27 @@ button {
 
 /* navbar */
 
+.navbar {
+  display: flex;
+  gap: 32px;
+  justify-content: end;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
 
-/* page content */
+.navbar h1 {
+  margin-right: auto;
+  border-bottom: 3px solid var(--primary);
+}
 
+.navbar a {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 16px;
+}
 
-/* help layout */
-
-
-/* faq */
-
-
-/* careers list */
-
-
-/* careers details */
-
-
-/* breadcrumbs */
+.navbar a.active {
+  border-bottom: 3px solid var(--primary);
+}
